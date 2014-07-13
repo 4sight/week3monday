@@ -1,50 +1,37 @@
+@import "bourbon/bourbon";
+
 body {
-    background: #fafafa;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #333;
+    font-family:  Helvetica, sans-serif;
+    color: white;
 }
 
-.wrapper {
-    margin: 50px auto 0 auto;
-    width: 400px;
-    font-size: 18px;
-    font-weight: 200;
-    line-height: 30px;
-    background-color: #eee;
-    border-radius: 6px;
-    padding: 60px;
-    h1 {
-        font-size: 60px;
-        line-height: 1;
-        letter-spacing: -1px;
-    }
+.accordion {
+  margin: auto;
+  width: 600px;
 }
 
-.browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+p {
+  color: black;    
+  padding: 10px 20px;
+  }
+
+h1 {
+  font-size: 18px;
+  margin: 0;
+  padding: 10px 20px;
+  background-color: #0ed2e3;
+  color: white;
+  cursor: pointer;
 }
 
-.sec label {
-    position: relative;
-    display: block;
-    height: 30px;
-}
+container {
+  float: left;
+  height: 200px;
+  border: 1px solid #11B4C2;
+  border-bottom: 1px solid #11B4C2;
+  overflow: hidden;
 
-.sec input {
-    display: none;
-}
-
-.sec article {
-    overflow: hidden;
-    height: 0px;
-    position: relative;
-    z-index: 10;
-    transition: height 0.3s ease-in-out;
-}
-
-.sec input:checked ~ article {
-    transition: height 0.5s ease-in-out;
+  &.hidden {
+   height: 40px;
+  }
 }
