@@ -1,3 +1,5 @@
+http://4sight.github.io/week3monday/
+
 week3monday
 ===========
 
